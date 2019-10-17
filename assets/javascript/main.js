@@ -35,10 +35,10 @@ console.log(over65);
 
 // calcolo costo del biglietto in base all'età dell'utente
 if (eta <= 18){
-  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + under18;
+  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + under18 + " euro";
 } else if (eta >= 65) {
-  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + over65;
+  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + over65 + " euro";
 } else {
-  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + costo + "euro";
+  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + costo + " euro";
 
 }
