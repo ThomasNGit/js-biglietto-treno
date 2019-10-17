@@ -23,17 +23,22 @@ var costo = chilometri * costoalkm;
 
 console.log(costo);
 
-// calcolo costo del biglietto under 18
+// calcolo costo del biglietto under 18 arrotondato a numero intero
 var under18 = parseInt(costo / 100 * 80);
 
 console.log(under18);
 
-// calcolo costo biglietto over 65
+// calcolo costo biglietto over 65 arrotondato a numero intero
 var over65 = parseInt(costo / 100 * 60);
 
 console.log(over65);
 
-// // // calcolo del costo del biglietto se utente minorenne o over 65;
-// costo if (eta < 18){
-//   under18;
-// }
+// calcolo costo del biglietto in base all'età dell'utente
+if (eta <= 18){
+  document.getElementById('mioid').innerHTML = "Il costo del biglietto è: " + under18;
+} else if (eta >= 65) {
+  document.getElementById('mioid').innerHTML = "Il costo del biglietto è: " + over65;
+} else {
+  document.getElementById('mioid').innerHTML = "Il costo del biglietto è: " + costo;
+
+}
