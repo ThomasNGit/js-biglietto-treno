@@ -24,12 +24,12 @@ var costo = chilometri * costoalkm;
 console.log(costo);
 
 // calcolo costo del biglietto under 18 arrotondato a numero intero
-var under18 = parseInt(costo / 100 * 80);
+var under18 = parseFloat(costo / 100 * 80).toFixed(2);
 
 console.log(under18);
 
 // calcolo costo biglietto over 65 arrotondato a numero intero
-var over65 = parseInt(costo / 100 * 60);
+var over65 = parseFloat(costo / 100 * 60).toFixed(2);
 
 console.log(over65);
 
