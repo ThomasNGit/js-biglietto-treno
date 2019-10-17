@@ -9,3 +9,16 @@
   width: 100%;
   background-color: #ba2c2c;
 }
+
+.txtcontainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mioid{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}

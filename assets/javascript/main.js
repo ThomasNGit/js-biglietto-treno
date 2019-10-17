@@ -39,6 +39,6 @@ if (eta <= 18){
 } else if (eta >= 65) {
   document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + over65;
 } else {
-  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + costo + "Euro";
+  document.getElementById('mioid').innerHTML = "Il prezzo del tuo biglietto sarà di: " + costo;
 
 }
