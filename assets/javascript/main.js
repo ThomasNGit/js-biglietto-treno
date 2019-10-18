@@ -2,34 +2,36 @@
 // e l’età e calcolare il prezzo del biglietto
 // ci saranno sconti per gli under 18(20%) e over 65(40%)
 
+// dichiarazione delle variabili
+var costoalkm, chilometri, eta, under18, over65;
 
 // dichiarazione della variabile del costo/km
-var costoalkm = 0.21;
+costoalkm = 0.21;
 
 
 // prompt con chilometri da percorrere
-var chilometri = prompt("Quanti chilometri devi percorrere?");
+chilometri = prompt("Quanti chilometri devi percorrere?");
 
 console.log(chilometri);
 
 // prompt con età dell'user
-var eta = prompt("Quanti anni hai?");
+eta = prompt("Quanti anni hai?");
 
 console.log(eta);
 
 
 // calcolo del costo del biglietto in relazione ai chilometri da percorrere
-var costo = chilometri * costoalkm;
+costo = chilometri * costoalkm;
 
 console.log(costo);
 
 // calcolo costo del biglietto under 18 arrotondato a numero intero
-var under18 = parseFloat(costo / 100 * 80).toFixed(2);
+under18 = parseFloat(costo / 100 * 80).toFixed(2);
 
 console.log(under18);
 
 // calcolo costo biglietto over 65 arrotondato a numero intero
-var over65 = parseFloat(costo / 100 * 60).toFixed(2);
+over65 = parseFloat(costo / 100 * 60).toFixed(2);
 
 console.log(over65);
 
